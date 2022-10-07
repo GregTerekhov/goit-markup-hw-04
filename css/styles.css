@@ -123,19 +123,14 @@ img {
 }
 
 .feedback .link {
-    display: block;
+    display: flex;
+    align-items: center;
     color: var(--text-colour-secondary);
+    fill: currentColor;
 }
 
 .feedback .icon {
     margin-right: 10px;
-
-    fill: var(--text-colour-secondary);
-}
-
-.feedback .icon:hover,
-.feedback .icon:focus {
-    fill: var(--accent-colour);
 }
 
 /* Webstudio styles */
