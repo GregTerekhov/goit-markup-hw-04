@@ -331,16 +331,14 @@ img {
     width: 44px;
     height: 44px;
     background-color: var(--bgc-primary);
+    fill: var(--colour-item);
     border-radius: 50%;
 }
 
 .social-link:hover,
 .social-link:focus {
     background-color: var(--accent-colour);
-}
-
-.social-link .icon {
-    fill: var(--colour-item);
+    fill: var(--text-colour-tertiary);
 }
 
 .social-link .icon:hover {
@@ -485,11 +483,9 @@ img {
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-}
-
-.social-networks .icon {
     fill: var(--text-colour-tertiary);
+
+    border-radius: 50%;
 }
 
 .social-networks:hover,
