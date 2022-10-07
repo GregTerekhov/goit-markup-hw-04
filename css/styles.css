@@ -10,7 +10,8 @@
     --text-colour-logo: #000000;
     --text-colour-contacts-footer: rgba(255, 255, 255, 0.6);
     --border-colour-header: #ececec;
-    --border-colour-item: #eeeeee;
+    --border-colour-block: #eeeeee;
+    --colour-item: #AFB1B8;
  }
 
 *, *::before, *::after {
@@ -118,6 +119,7 @@ img {
 .feedback {
     display: flex;
     align-items: baseline;
+    gap: 50px;
 }
 
 .feedback .link {
@@ -125,19 +127,15 @@ img {
     color: var(--text-colour-secondary);
 }
 
-.link > .icon {
+.feedback .icon {
     margin-right: 10px;
 
     fill: var(--text-colour-secondary);
 }
 
-.link > .icon:hover,
-.link > .icon:focus {
+.feedback .icon:hover,
+.feedback .icon:focus {
     fill: var(--accent-colour);
-}
-
-.feedback .item + .item {
-    margin-left: 50px;
 }
 
 /* Webstudio styles */
@@ -332,6 +330,7 @@ img {
 .social-link {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     background-color: var(--bgc-primary);
@@ -344,7 +343,7 @@ img {
 }
 
 .social-link .icon {
-    fill: #AFB1B8;
+    fill: var(--colour-item);
 }
 
 .social-link .icon:hover {
@@ -369,21 +368,26 @@ img {
 
 .clients-list {
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 
-.clients-logo {
+.client-logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
 
-    padding: 16px 32px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--colour-item);
     border-radius: 4px;
+    fill: var(--colour-item);
 }
 
 .client-logo-link:hover,
 .client-logo-link:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid var(--accent-colour);
+    fill: var(--accent-colour);
 }
 
 /* Footer styles */
@@ -478,7 +482,9 @@ img {
 }
 
 .social-networks {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -565,7 +571,7 @@ img {
 .project-descr {
     padding: 20px 24px;
 
-    border: 1px solid var(--border-colour-item);
+    border: 1px solid var(--border-colour-block);
     border-top: none;
 }
 
